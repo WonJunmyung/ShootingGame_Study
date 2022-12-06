@@ -1,0 +1,315 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16297 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Unity/Study/ShootingGame_Study
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+7782
+Successfully changed project path to: C:/Unity/Study/ShootingGame_Study
+C:/Unity/Study/ShootingGame_Study
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 90.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Unity/Study/ShootingGame_Study/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   NVIDIA
+    VRAM:     4053 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007791 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 86.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.699 seconds
+Domain Reload Profiling:
+	ReloadAssembly (699ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (498ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (116ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (298ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (58ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009605 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.266 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1266ms)
+		BeginReloadAssembly (271ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (137ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (386ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.4 KB). Loaded Objects now: 3844.
+Memory consumption went from 121.6 MB to 121.5 MB.
+Total: 3.431400 ms (FindLiveObjects: 0.305300 ms CreateObjectMapping: 0.288300 ms MarkObjects: 2.721000 ms  DeleteObjects: 0.115700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 694963.353743 seconds.
+  path: Assets/ToonyTinyPeople/TT_Citizens/model/Male_Citizens_customizable.FBX
+  artifactKey: Guid(8ed86b8ef3190a9429964c02eaa4f31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_Citizens/model/Male_Citizens_customizable.FBX using Guid(8ed86b8ef3190a9429964c02eaa4f31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f5f37f4014ae96ac90a9462e4461da') in 1.127638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.682222 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_02.prefab
+  artifactKey: Guid(08eee6a0564e17740b78385a51bab9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_02.prefab using Guid(08eee6a0564e17740b78385a51bab9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d80123ed77e9fe4f883e0bb1b5e8cc3') in 0.052157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_police_04.prefab
+  artifactKey: Guid(bafbe60e099027d4da82aae634cc9433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_police_04.prefab using Guid(bafbe60e099027d4da82aae634cc9433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe8045fd57f4bd2e4e5a9e206c6db10') in 0.035650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_police_03.prefab
+  artifactKey: Guid(aebb93c717aba114f9c83f4264418bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_police_03.prefab using Guid(aebb93c717aba114f9c83f4264418bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83636074b515475192e8f9dc6c439811') in 0.036177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_03.prefab
+  artifactKey: Guid(8e7198429e0a8e54184feff5e4259bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_03.prefab using Guid(8e7198429e0a8e54184feff5e4259bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948dc57a98acdaed09aae7e2a547049c') in 0.031650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_14.prefab
+  artifactKey: Guid(231440b219f142546950e8d5b68401e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_14.prefab using Guid(231440b219f142546950e8d5b68401e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1509de5c0369e483bb889facb657e373') in 0.034872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_11.prefab
+  artifactKey: Guid(d845724162ec0b94ea802bd327c11784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_11.prefab using Guid(d845724162ec0b94ea802bd327c11784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea92dd095753b1f60df95c02f6be2131') in 0.033740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_punk_02.prefab
+  artifactKey: Guid(a53656e37c8d6ce4caf30fa3e2cb27fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_punk_02.prefab using Guid(a53656e37c8d6ce4caf30fa3e2cb27fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6420e5ee5d32077f4fe3244763ca77ad') in 0.032081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_doctor.prefab
+  artifactKey: Guid(3650bc5fe79772544b15444fcf0006c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_doctor.prefab using Guid(3650bc5fe79772544b15444fcf0006c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aec91073ebf84e428194c873c77f85a') in 0.032246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_punk_03.prefab
+  artifactKey: Guid(a00fefc51f7e5ce48acf893f2976eeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_punk_03.prefab using Guid(a00fefc51f7e5ce48acf893f2976eeeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9487e4e5c2b808121dc7bc77dde82484') in 0.034142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_05.prefab
+  artifactKey: Guid(dc173a947e201bb4a98119ea4cfb83a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_05.prefab using Guid(dc173a947e201bb4a98119ea4cfb83a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd93a6a1babd32af2e5facd484cec9dd') in 0.035609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_03.prefab
+  artifactKey: Guid(f08c704964481c84a8c4daa91bd9831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_03.prefab using Guid(f08c704964481c84a8c4daa91bd9831b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b790ec1a38028154dd929ed3451d353f') in 0.033108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_04.prefab
+  artifactKey: Guid(b9ed5da3f0537ca46b2a42d4e35c5250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_04.prefab using Guid(b9ed5da3f0537ca46b2a42d4e35c5250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b43406a92162834e8fd2ec616afc94f') in 0.036079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_08.prefab
+  artifactKey: Guid(7cf3dbd68d9d8b9499e7a4c4e072f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_08.prefab using Guid(7cf3dbd68d9d8b9499e7a4c4e072f343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ccb24edf26b8d65f7469b1633eda6c') in 0.036196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_09.prefab
+  artifactKey: Guid(01a29a24750953e409bedb55438d4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_09.prefab using Guid(01a29a24750953e409bedb55438d4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b218c834a984af2296f543c33043d32') in 0.033538 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010190 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.330 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1331ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1041ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (362ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (442ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.9 KB). Loaded Objects now: 3859.
+Memory consumption went from 139.7 MB to 139.6 MB.
+Total: 2.792500 ms (FindLiveObjects: 0.267400 ms CreateObjectMapping: 0.182200 ms MarkObjects: 2.259300 ms  DeleteObjects: 0.082700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

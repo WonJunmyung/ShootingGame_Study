@@ -15,7 +15,7 @@ C:/Unity/Study/ShootingGame_Study
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-7918
+7782
 Successfully changed project path to: C:/Unity/Study/ShootingGame_Study
 C:/Unity/Study/ShootingGame_Study
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Unity/Study/ShootingGame_Study
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 104.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,77 +63,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008497 seconds.
+Registered in 0.008631 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 100.41 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  0.812 seconds
 Domain Reload Profiling:
-	ReloadAssembly (794ms)
+	ReloadAssembly (813ms)
 		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (565ms)
-			LoadAssemblies (88ms)
+		EndReloadAssembly (583ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (131ms)
+			SetupTypeCache (143ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (336ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (339ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (72ms)
+				InitializePlatformSupportModulesInManaged (77ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (101ms)
+				RefreshPlugins (93ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009364 seconds.
+Registered in 0.009268 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.368 seconds
+- Completed reload, in  1.250 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1369ms)
-		BeginReloadAssembly (244ms)
+	ReloadAssembly (1251ms)
+		BeginReloadAssembly (220ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (136ms)
-		EndReloadAssembly (985ms)
-			LoadAssemblies (101ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (905ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (326ms)
+			SetupTypeCache (289ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (451ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (409ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (276ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (241ms)
 				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
@@ -143,12 +143,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3406 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (115.0 KB). Loaded Objects now: 3868.
-Memory consumption went from 128.5 MB to 128.4 MB.
-Total: 3.350700 ms (FindLiveObjects: 0.323700 ms CreateObjectMapping: 0.315100 ms MarkObjects: 2.561400 ms  DeleteObjects: 0.149400 ms)
+Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.4 KB). Loaded Objects now: 3844.
+Memory consumption went from 121.6 MB to 121.4 MB.
+Total: 3.739800 ms (FindLiveObjects: 0.320800 ms CreateObjectMapping: 0.315200 ms MarkObjects: 2.915900 ms  DeleteObjects: 0.186700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,22 +163,260 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 346705.352167 seconds.
-  path: Assets/unity-chan!/Unity-chan! Model/Prefabs/BoxUnityChan.prefab
-  artifactKey: Guid(6788413dff62c534d8ca610faef3c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/unity-chan!/Unity-chan! Model/Prefabs/BoxUnityChan.prefab using Guid(6788413dff62c534d8ca610faef3c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf502aae4978361a837f9363e15ab7db') in 0.160330 seconds 
+  Time since last request: 694873.975864 seconds.
+  path: Assets/Silly/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4800fc4ea60ef3ab7cbae4ca6edd96dc') in 0.017659 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/unity-chan!/Unity-chan! Model/Prefabs/Locator_IKtarget.prefab
-  artifactKey: Guid(88eeda7d3a9f2492da9213d1c1ab46d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/unity-chan!/Unity-chan! Model/Prefabs/Locator_IKtarget.prefab using Guid(88eeda7d3a9f2492da9213d1c1ab46d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65534e5df52e04a4b33cfc33f57991d7') in 0.015574 seconds 
+  Time since last request: 8.710361 seconds.
+  path: Assets/Silly/Scenes/Character.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Scenes/Character.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4f7cd763ca8034028451b61e409062') in 0.006994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.694760 seconds.
+  path: Assets/ToonyTinyPeople/TT_Citizens/TT_City_Pack.png
+  artifactKey: Guid(d4529844ce66f23499958cb99641c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_Citizens/TT_City_Pack.png using Guid(d4529844ce66f23499958cb99641c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def185719864655bcfa74f397a6fc37f') in 0.077938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.849516 seconds.
+  path: Assets/ToonyTinyPeople/TT_Citizens/model/Female_Citizens_customizable.FBX
+  artifactKey: Guid(635cb25ea3f6cc24f93ebb5d3f908585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_Citizens/model/Female_Citizens_customizable.FBX using Guid(635cb25ea3f6cc24f93ebb5d3f908585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd86f2432a0e183fd525892d83ffe8a') in 0.998581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/ToonyTinyPeople/TT_Citizens/sample_scene/ground.mat
+  artifactKey: Guid(760eab26423ce3646a85922ec76327d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_Citizens/sample_scene/ground.mat using Guid(760eab26423ce3646a85922ec76327d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7246363e0917ff8a03734b0dbfb58d0a') in 0.039356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/ToonyTinyPeople/TT_Citizens/sample_scene/quad.tga
+  artifactKey: Guid(8693d5a10325f314aaaf4b526a6a83ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonyTinyPeople/TT_Citizens/sample_scene/quad.tga using Guid(8693d5a10325f314aaaf4b526a6a83ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4db11890bbf5a1c414fcc50662ff611') in 0.018558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.498445 seconds.
+  path: Assets/Silly/Resources/Citizen
+  artifactKey: Guid(c602c07d31889ce4e90a32833417172c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen using Guid(c602c07d31889ce4e90a32833417172c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c107113c5b39c5a0a7a45bf88d9eb4e9') in 0.006701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.077020 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male
+  artifactKey: Guid(428923aa89b47204c951e0bec9157af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male using Guid(428923aa89b47204c951e0bec9157af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d56110ab91c0cf2ccad75da5417cd1') in 0.007624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.129593 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_01.prefab
+  artifactKey: Guid(06d8904ff01340b4f80eba1b806c4ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_01.prefab using Guid(06d8904ff01340b4f80eba1b806c4ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5cf915b160150c3bbc1b95a699b119') in 0.046935 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000034 seconds.
-  path: Assets/unity-chan!/Unity-chan! Model/Prefabs/Directional light for UnityChan.prefab
-  artifactKey: Guid(b76c71a1e3f6c4fdab657f4fbf5466de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/unity-chan!/Unity-chan! Model/Prefabs/Directional light for UnityChan.prefab using Guid(b76c71a1e3f6c4fdab657f4fbf5466de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde8bacfb1708c15ad362f9a130e3b18') in 0.010692 seconds 
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_police_01.prefab
+  artifactKey: Guid(99b05bfed9d30b249b8c27aacc2e53de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_police_01.prefab using Guid(99b05bfed9d30b249b8c27aacc2e53de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b035708a15db10c7812d115c0a5e2a4c') in 0.039818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_15.prefab
+  artifactKey: Guid(046792bb57858564fba0132edb802422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_15.prefab using Guid(046792bb57858564fba0132edb802422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d559d1318720cb1ea23fa831bd477f') in 0.035424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_01.prefab
+  artifactKey: Guid(b91c6d81379a35c47bf66d9c31b58975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_01.prefab using Guid(b91c6d81379a35c47bf66d9c31b58975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf697f5b343d69a195d6a9bcafc9f5e') in 0.032412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_priest.prefab
+  artifactKey: Guid(7104c66bb16592a4f9326235c64626a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_priest.prefab using Guid(7104c66bb16592a4f9326235c64626a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c14c07987ecbfd2c1f876d0899f3f5') in 0.031994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_06.prefab
+  artifactKey: Guid(42f5d995889cc63489778ac357e5ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_06.prefab using Guid(42f5d995889cc63489778ac357e5ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554914c4f076a15758ce3cbbe7861978') in 0.035783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_07.prefab
+  artifactKey: Guid(e351f83e0c2d50c4e92b803a06acad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_07.prefab using Guid(e351f83e0c2d50c4e92b803a06acad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80926beaa7719954a57f3ebfffc3440') in 0.033028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_02.prefab
+  artifactKey: Guid(445676f40fbb17840b8fb915d5bf0b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_farmer_02.prefab using Guid(445676f40fbb17840b8fb915d5bf0b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c702d09d251f9efab9dc660880756a24') in 0.033058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_13.prefab
+  artifactKey: Guid(22e5c18fed085934bb7341f8f5a9978c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_13.prefab using Guid(22e5c18fed085934bb7341f8f5a9978c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0873578568be7ff089e7aa9b197c921') in 0.033889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_worker_01.prefab
+  artifactKey: Guid(46731834ed4f8824abf67214b5ccecb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_worker_01.prefab using Guid(46731834ed4f8824abf67214b5ccecb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03518b592b9d145e9b2ec36accb4932f') in 0.034172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_police_05.prefab
+  artifactKey: Guid(ed3e6550040bcee4f972d22a274eab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_police_05.prefab using Guid(ed3e6550040bcee4f972d22a274eab31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8345b31ab22317a073e1b0019266b89b') in 0.035426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_10.prefab
+  artifactKey: Guid(01d1795f0c8d13248a73c92143af967a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_10.prefab using Guid(01d1795f0c8d13248a73c92143af967a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcdab388e0de9ecbb3cb530006e3b09') in 0.035217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_punk_01.prefab
+  artifactKey: Guid(b9d8779eb4ed74b4e96ff6dfd109b334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_punk_01.prefab using Guid(b9d8779eb4ed74b4e96ff6dfd109b334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b7c87f8ac443c6f59abb35565d61de') in 0.035682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_police_02.prefab
+  artifactKey: Guid(6a6e1a4297af7c0448b608007b64d48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_police_02.prefab using Guid(6a6e1a4297af7c0448b608007b64d48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc3677bff089d090adb95c488d07d93') in 0.034405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_12.prefab
+  artifactKey: Guid(360c71d2c9134c54abc4d18727c535bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/prefabs/male/M_civilian_12.prefab using Guid(360c71d2c9134c54abc4d18727c535bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf75248926e6740ceee4bd48f58ccd6') in 0.029619 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010554 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Unity\Study\ShootingGame_Study\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1319ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1034ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (364ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3895.
+Memory consumption went from 139.9 MB to 139.8 MB.
+Total: 2.976900 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.201000 ms MarkObjects: 2.410000 ms  DeleteObjects: 0.085900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 109.309948 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_death_A.FBX
+  artifactKey: Guid(3061d30ff65e31e4693c677f924dcda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_death_A.FBX using Guid(3061d30ff65e31e4693c677f924dcda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731cbb7006913d4a83d08d784b6a8c77') in 0.049011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_walk.FBX
+  artifactKey: Guid(03f6dd55ee01d674f99fac8821de1519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_walk.FBX using Guid(03f6dd55ee01d674f99fac8821de1519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd273565e6944c064081dd0e803892a7e') in 0.014567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_interact_B.FBX
+  artifactKey: Guid(cb022729a86e8eb4b81f9dc8fbe64838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_interact_B.FBX using Guid(cb022729a86e8eb4b81f9dc8fbe64838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8efc27409521b9293947d39b14ff5b') in 0.015090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_interact_A.FBX
+  artifactKey: Guid(4d8976926b18d4f48948483566ab6f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_interact_A.FBX using Guid(4d8976926b18d4f48948483566ab6f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c68a9eb7369c18b28b38465b6f18ed6') in 0.015072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_jump_B_loop.FBX
+  artifactKey: Guid(63c09b7f3b555114a8c46e36e9a16887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_jump_B_loop.FBX using Guid(63c09b7f3b555114a8c46e36e9a16887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5322f412852236291d90ba94b23dfbf') in 0.014487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_death_C.FBX
+  artifactKey: Guid(ab4493543c00b9d41a9ecda40374f57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_death_C.FBX using Guid(ab4493543c00b9d41a9ecda40374f57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a48935d0b4fde2af86b37eb1a516531') in 0.014750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_panic_idle.FBX
+  artifactKey: Guid(00e94a14e7878284db88e69ad11c9d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_panic_idle.FBX using Guid(00e94a14e7878284db88e69ad11c9d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b111d5b0341e00da1d9a4c6704de1dee') in 0.014497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_talk.FBX
+  artifactKey: Guid(918521d8d7e1ee24d956120e3a10a768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_talk.FBX using Guid(918521d8d7e1ee24d956120e3a10a768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8720ec8a71227e55ba92b92a421ef427') in 0.014137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_run_rm.FBX
+  artifactKey: Guid(62fc31284d9bda1448807717ebe8ee09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_run_rm.FBX using Guid(62fc31284d9bda1448807717ebe8ee09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20eaad84279bc9ed32b74aa519aaccf') in 0.013946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Silly/Resources/Citizen/animation/male/m_death_B.FBX
+  artifactKey: Guid(806ec0f7d7d8bab4cae757b4f11f40bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Silly/Resources/Citizen/animation/male/m_death_B.FBX using Guid(806ec0f7d7d8bab4cae757b4f11f40bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8cb056b044d8aab06a618995dd39ef') in 0.015052 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

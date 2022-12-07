@@ -40,61 +40,128 @@ namespace Silly
         /// </summary>
         void Move()
         {
-            // 캐릭터가 지면에 있는지 체크
-            if (charController.isGrounded)
+            bool isWalk = false;
+            // ↖
+            if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow)))
             {
-                // 점프
-                if (Input.GetButton("Jump"))
-                {
-                    moveDir.y = jumpForce;
-                }
+                charController.Move(Vector3.Normalize(this.transform.forward - (this.transform.right)) * Time.deltaTime);
+                isWalk = true;
             }
-            // 중력 적용
-            if (moveDir.y > 0)
+            // ↗
+            else if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)))
             {
-                moveDir.y -= gravity * Time.deltaTime;
+                charController.Move(Vector3.Normalize(this.transform.forward - (-this.transform.right)) * Time.deltaTime);
+                isWalk = true;
+            }
+            // ↙
+            else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow)))
+            {
+                charController.Move(Vector3.Normalize(-this.transform.forward - (this.transform.right)) * Time.deltaTime);
+                isWalk = true;
+            }
+            // ↘
+            else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow)))
+            {
+                charController.Move(Vector3.Normalize(-this.transform.forward - (-this.transform.right)) * Time.deltaTime);
+                isWalk = true;
+            }
+            // ↑
+            else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                charController.Move(this.transform.forward * Time.deltaTime);
+                isWalk = true;
+            }
+            // ↓
+            else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                charController.Move(-this.transform.forward * Time.deltaTime);
+                isWalk = true;
+            }
+            // ←
+            else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                charController.Move(-this.transform.right * Time.deltaTime);
+                isWalk = true;
+            }
+            // →
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                charController.Move(this.transform.right * Time.deltaTime);
+                isWalk = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                animator.SetTrigger("isShoot");
+            }
+
+            if (isWalk)
+            {
+                animator.SetBool("isWalk", true);
             }
             else
             {
-                moveDir.y = 0;
-            }
-            // 캐릭터 조작의 방향을 받아온다.
-            moveDir = new Vector3(Input.GetAxis("Horizontal"), moveDir.y, Input.GetAxis("Vertical"));
-
-            this.transform.Translate(moveDir.normalized * speed * Time.deltaTime, Space.Self);
-
-            // 캐릭터 실제 움직임
-            charController.Move(moveDir * Time.deltaTime);
-            //charController.
-
-
-
-            if (moveDir != Vector3.zero)
-            {
-                animator.SetFloat("Speed", moveDir.magnitude);
-            }
-            else
-            {
-                animator.SetFloat("Speed", 0f);
+                animator.SetBool("isWalk", false);
             }
         }
 
-        void Rotation()
+        Vector3 LookPos()
         {
-
-            // 마우스 좌표를 카메라로부터의 레이를 반환한다.
             Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             // 평면을 만들어낸다.
             Plane plane = new Plane(Vector3.up, Vector3.zero);
             // 레이 길이를 받아올 변수
             float rayLength;
+            Vector3 look = Vector3.zero;
             // 
-            if(plane.Raycast(cameraRay, out rayLength))
+            if (plane.Raycast(cameraRay, out rayLength))
             {
-                Vector3 look = cameraRay.GetPoint(rayLength);
+                look = cameraRay.GetPoint(rayLength);
 
                 this.transform.LookAt(new Vector3(look.x, this.transform.position.y, look.z));
+                
             }
+            return look;
+        }
+
+        void Rotation()
+        {
+            ///////////////////////////// Ray를 통한 캐릭터의 바라보는 방향 구하기 /////////////////////////////////////////
+            // 마우스 좌표를 카메라로부터의 레이를 반환한다.
+            //Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            //// 평면을 만들어낸다.
+            //Plane plane = new Plane(Vector3.up, Vector3.zero);
+            //// 레이 길이를 받아올 변수
+            //float rayLength;
+            //// 
+            //if (plane.Raycast(cameraRay, out rayLength))
+            //{
+            //    Vector3 look = cameraRay.GetPoint(rayLength);
+
+            //    this.transform.LookAt(new Vector3(look.x, this.transform.position.y, look.z));
+            //}
+            /////////////////////////////////////////////////////////////////////////////////////////////////
+            ///
+            Vector3 lookPos = LookPos();
+            if(lookPos != Vector3.zero)
+            {
+                this.transform.LookAt(new Vector3(lookPos.x, this.transform.position.y, lookPos.z));
+            }
+
+            /////////////////////////////// 위치 값을 통한 캐릭터의 바라보는 방향 구하기 ////////////////////////////////////
+            //Vector3 cameraToMousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z);
+            //Vector3 worldMousePoint = Camera.main.ScreenToWorldPoint(cameraToMousePos);
+
+            //worldMousePoint.y = this.transform.position.y;
+
+            //Vector3 dir = worldMousePoint - this.transform.position;
+
+            //Quaternion rot = Quaternion.LookRotation(dir.normalized);
+
+            //this.transform.rotation = rot;
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
     }
 }

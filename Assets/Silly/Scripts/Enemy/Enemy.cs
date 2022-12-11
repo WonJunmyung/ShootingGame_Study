@@ -12,6 +12,13 @@ namespace Silly
         NavMeshPath path;
         private Animator animator;
         private bool isNav = true;
+        public GameObject bloodEffect;
+
+        public int totalHp = 2;
+        public int hp = 2;
+        public bool isLife = true;
+
+        
 
         // Start is called before the first frame update
         void Start()
@@ -26,26 +33,27 @@ namespace Silly
         // Update is called once per frame
         void Update()
         {
-            
-            if (Player != null)
+            if (isLife)
             {
-                agent.CalculatePath(Player.position, path);
-                
-                agent.destination = Player.position;
-
-                if (isNav && Vector3.Distance(transform.position, Player.position) < agent.stoppingDistance + 0.1f)
+                if (Player != null)
                 {
-                    Debug.Log("tets");
-                    isNav = false;
-                    agent.isStopped = true;
-                    animator.SetBool("isWalk", false);
-                    //transform.LookAt(Player.position);
+                    agent.CalculatePath(Player.position, path);
 
-                    StartCoroutine(Attack());
+                    agent.destination = Player.position;
+
+                    if (isNav && (Vector3.Distance(transform.position, Player.position) < agent.stoppingDistance + 0.1f || Vector3.Distance(transform.position, Player.position) > 30.0f))
+                    {
+                        isNav = false;
+                        agent.isStopped = true;
+                        animator.SetBool("isWalk", false);
+                        //transform.LookAt(Player.position);
+
+                        StartCoroutine(Attack());
+                    }
+                   
+
+                    transform.LookAt(Player.position);
                 }
-                
-                transform.LookAt(Player.position);
-                
             }
         }
 
@@ -70,5 +78,37 @@ namespace Silly
             }
             
         }
+
+        public void Hit()
+        {
+            if (isLife)
+            {
+                Instantiate(bloodEffect, transform.position + Vector3.up * 1.5f, transform.rotation);
+                this.transform.position -= agent.transform.forward * 0.1f;
+                hp--;
+
+                Renderer[] enemyColor = this.GetComponentsInChildren<Renderer>();
+
+                if (hp > 0)
+                {
+                    for (int i = 0; i < enemyColor.Length; i++)
+                    {
+                        enemyColor[i].material.color = enemyColor[i].material.color * ((float)hp / (float)totalHp);
+                    }
+                }
+                else
+                {
+                    isLife = false;
+                    agent.isStopped = true;
+                    animator.SetTrigger("die");
+                    Destroy(this.gameObject, 2.0f);
+
+                }
+            }
+
+            
+        }
+
+
     }
 }

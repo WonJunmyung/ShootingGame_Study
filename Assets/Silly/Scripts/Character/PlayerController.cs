@@ -54,49 +54,49 @@ namespace Silly
             // ¢Ø
             if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow)))
             {
-                charController.Move(Vector3.Normalize(this.transform.forward - (this.transform.right)) * Time.deltaTime);
+                charController.Move(Vector3.Normalize(this.transform.forward - (this.transform.right)) * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¢Ö
             else if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow)))
             {
-                charController.Move(Vector3.Normalize(this.transform.forward - (-this.transform.right)) * Time.deltaTime);
+                charController.Move(Vector3.Normalize(this.transform.forward - (-this.transform.right)) * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¢×
             else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.LeftArrow)))
             {
-                charController.Move(Vector3.Normalize(-this.transform.forward - (this.transform.right)) * Time.deltaTime);
+                charController.Move(Vector3.Normalize(-this.transform.forward - (this.transform.right)) * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¢Ù
             else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)) || (Input.GetKey(KeyCode.DownArrow) && Input.GetKey(KeyCode.RightArrow)))
             {
-                charController.Move(Vector3.Normalize(-this.transform.forward - (-this.transform.right)) * Time.deltaTime);
+                charController.Move(Vector3.Normalize(-this.transform.forward - (-this.transform.right)) * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¡è
             else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
-                charController.Move(this.transform.forward * Time.deltaTime);
+                charController.Move(this.transform.forward * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¡é
             else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
-                charController.Move(-this.transform.forward * Time.deltaTime);
+                charController.Move(-this.transform.forward * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¡ç
             else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                charController.Move(-this.transform.right * Time.deltaTime);
+                charController.Move(-this.transform.right * Time.deltaTime * speed);
                 isWalk = true;
             }
             // ¡æ
             else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
-                charController.Move(this.transform.right * Time.deltaTime);
+                charController.Move(this.transform.right * Time.deltaTime * speed);
                 isWalk = true;
             }
 

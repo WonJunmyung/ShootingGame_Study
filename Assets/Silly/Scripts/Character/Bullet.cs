@@ -29,5 +29,16 @@ namespace Silly
                 ObjectPool.Instance.PushToPool(poolItemName, gameObject);
             }
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                other.gameObject.GetComponent<Enemy>().Hit();
+                lifeTime = 0f;
+                ObjectPool.Instance.PushToPool(poolItemName, gameObject);
+            }
+
+        }
     }
 }

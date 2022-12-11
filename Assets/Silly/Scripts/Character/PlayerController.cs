@@ -17,6 +17,9 @@ namespace Silly
         public GameObject bullet;
         public Transform bulletPoint;
         public string bulletName = "Bullet";
+        public float bulletTimer = 1.0f;
+        public float bulletLife = 0f;
+        bool isShoot = false;
         
 
 
@@ -97,11 +100,18 @@ namespace Silly
                 isWalk = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            // ÃÑ¾Ë ¹ß»ç
+            if (bulletLife < 0.001f)
             {
-                animator.SetTrigger("isShoot");
-                Fire();
+                
+                if (Input.GetKey(KeyCode.Mouse0))
+                {
+                    animator.SetTrigger("isShoot");
+                    Invoke("Fire", 0.2f);
+                    isShoot = true;
+                }
             }
+            
 
             if (isWalk)
             {
@@ -110,6 +120,19 @@ namespace Silly
             else
             {
                 animator.SetBool("isWalk", false);
+            }
+
+            if (isShoot)
+            {
+                if (bulletLife < bulletTimer)
+                {
+                    bulletLife += Time.deltaTime;
+                }
+                else
+                {
+                    bulletLife = 0f;
+                    isShoot = false;
+                }
             }
         }
 
@@ -177,7 +200,8 @@ namespace Silly
             GameObject fireBullet = ObjectPool.Instance.PopFromPool(bulletName);
 
             fireBullet.transform.rotation = this.transform.rotation;
-            fireBullet.transform.position = bulletPoint.position;
+            
+            fireBullet.transform.position = new Vector3( bulletPoint.position.x, this.transform.position.y + 0.8f, bulletPoint.position.z);
 
             fireBullet.SetActive(true);
 

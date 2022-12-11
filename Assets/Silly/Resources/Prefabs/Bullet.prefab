@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolItemName: Bullet
   speed: 10
-  endTime: 3
+  endTime: 2
   lifeTime: 0
 --- !u!1 &5787265436186919507
 GameObject:

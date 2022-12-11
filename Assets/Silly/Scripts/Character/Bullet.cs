@@ -8,7 +8,7 @@ namespace Silly
     {
         public string poolItemName = "Bullet";
         public float speed = 10.0f;
-        public float endTime = 3.0f;            // 총알이 사라지는 시간
+        public float endTime = 2.0f;            // 총알이 사라지는 시간
         public float lifeTime = 0f;             // 총알이 나타나고 경과된 시간
         // Start is called before the first frame update
         void Start()

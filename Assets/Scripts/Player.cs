@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     {
         Walk();
         Attack();
+        Rotation();
     }
 
     void Walk()
@@ -66,4 +67,20 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isAttack");
         }
     }
+
+    void Rotation()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        Plane plane = new Plane(Vector3.up, Vector3.zero);
+
+        float rayLength;
+        if(plane.Raycast(ray, out rayLength))
+        {
+            Vector3 mousePoint = ray.GetPoint(rayLength);
+
+            this.transform.LookAt(new Vector3(mousePoint.x, this.transform.position.y, mousePoint.z));
+        }
+    }
+
 }

@@ -8,6 +8,10 @@ public class Enemy : MonoBehaviour
     NavMeshAgent navMeshAgent;
     Transform player;
     Animator animator;
+    public bool isAttackCheck = false;
+    int hp = 2;
+    bool isStop = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +47,10 @@ public class Enemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         animator.SetTrigger("isAttack");
+        isAttackCheck= true;
+
         yield return new WaitForSeconds(0.5f);
+        isAttackCheck = false;
         if (Vector3.Distance(this.transform.position, player.position) < navMeshAgent.stoppingDistance + 0.1f)
         {
                 StartCoroutine("Attack");
@@ -51,6 +58,20 @@ public class Enemy : MonoBehaviour
         else
         {
             navMeshAgent.isStopped = false;
+        }
+    }
+    public void SetHp(int damage)
+    {
+        if (!isStop)
+        {
+            hp -= damage;
+            if (hp <= 0)
+            {
+                hp = 0;
+                Debug.Log("die");
+                animator.SetTrigger("Death");
+                isStop = true;
+            }
         }
     }
 }

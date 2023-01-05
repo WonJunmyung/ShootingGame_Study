@@ -9,8 +9,10 @@ public class Enemy : MonoBehaviour
     Transform player;
     Animator animator;
     public bool isAttackCheck = false;
+    int maxHp = 2;
     int hp = 2;
     bool isStop = false;
+    Renderer[] renderers;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +21,18 @@ public class Enemy : MonoBehaviour
         animator = this.GetComponent<Animator>();
         player = GameObject.Find("Player").transform;
         navMeshAgent.destination = player.position;
+        renderers = this.GetComponentsInChildren<Renderer>();
+        Debug.Log(renderers.Length);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isStop)
+        {
+            return;
+        }
         if(!navMeshAgent.isStopped)
         {
             if (Vector3.Distance(this.transform.position, player.position) < navMeshAgent.stoppingDistance + 0.1f)
@@ -68,10 +77,20 @@ public class Enemy : MonoBehaviour
             if (hp <= 0)
             {
                 hp = 0;
-                Debug.Log("die");
                 animator.SetTrigger("Death");
+                isAttackCheck = false;
                 isStop = true;
+                navMeshAgent.isStopped = true;
+            }
+            else
+            {
+                foreach(Renderer render in renderers)
+                {
+                    render.material.color = render.material.color * hp / maxHp;
+                }
             }
         }
     }
+
+    
 }

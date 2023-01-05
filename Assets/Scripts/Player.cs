@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     bool isWalk = false;
     public bool isAttackCheck = false;
     int hp = 2;
-    bool isStop = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,14 @@ public class Player : MonoBehaviour
         characterController = this.GetComponent<CharacterController>();
         animator = this.GetComponent<Animator>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
+        if (!Manager.Instance.isLive)
+        {
+            return;
+        }
         Walk();
         Attack();
         Rotation();
@@ -80,6 +84,10 @@ public class Player : MonoBehaviour
 
     void Rotation()
     {
+        if (Manager.Instance.isPause)
+        {
+            return;
+        }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         Plane plane = new Plane(Vector3.up, Vector3.zero);
@@ -95,17 +103,22 @@ public class Player : MonoBehaviour
 
     public void SetHp(int damage)
     {
-        if (!isStop)
+        if (Manager.Instance.isLive)
         {
             hp -= damage;
             if (hp <= 0)
             {
                 hp = 0;
-                Debug.Log("GameOver");
                 animator.SetTrigger("Death");
-                isStop = true;
+                Manager.Instance.isLive = false;
+                Invoke("GameOver", 1.0f);
             }
         }
+    }
+
+    public void GameOver()
+    {
+        Manager.Instance.PauseGame();
     }
 
 }

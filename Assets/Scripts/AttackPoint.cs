@@ -7,7 +7,7 @@ public class AttackPoint : MonoBehaviour
 {
     public Enemy enemy;
     public Player player;
-    public int damage;
+    public int damage = 1;
     public enum Char
     {
         Player,
@@ -38,7 +38,8 @@ public class AttackPoint : MonoBehaviour
                 {
                     if (player.isAttackCheck)
                     {
-                        Debug.Log(other.tag);
+                        //Debug.Log(other.tag);
+                        enemy = other.GetComponent<Enemy>();
                         player.isAttackCheck = false;
                         enemy.SetHp(damage);
                     }
@@ -49,7 +50,8 @@ public class AttackPoint : MonoBehaviour
                 {
                     if (enemy.isAttackCheck)
                     {
-                        Debug.Log(other.tag);
+                        //Debug.Log(other.tag);
+                        player = other.GetComponent<Player>();
                         enemy.isAttackCheck = false;
                         player.SetHp(damage);
                     }

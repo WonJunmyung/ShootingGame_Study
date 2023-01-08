@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     int hp = 2;
     bool isStop = false;
     Renderer[] renderers;
+    Color originColor;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Enemy : MonoBehaviour
         navMeshAgent.destination = player.position;
         renderers = this.GetComponentsInChildren<Renderer>();
         Debug.Log(renderers.Length);
-        
+        originColor = renderers[0].material.color;
     }
 
     // Update is called once per frame
@@ -84,12 +85,29 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                foreach(Renderer render in renderers)
-                {
-                    render.material.color = render.material.color * hp / maxHp;
-                }
+                //foreach(Renderer render in renderers)
+                //{
+                //    //render.material.color = render.material.color * hp / maxHp;
+                //    render.material.color = Color.red;
+                //}
+                StartCoroutine("HitColor");
             }
         }
+    }
+    IEnumerator HitColor()
+    {
+        foreach (Renderer render in renderers)
+        {
+            //render.material.color = render.material.color * hp / maxHp;
+            render.material.color = Color.red;
+        }
+        yield return new WaitForSeconds(0.5f);
+        foreach (Renderer render in renderers)
+        {
+            //render.material.color = render.material.color * hp / maxHp;
+            render.material.color = originColor;
+        }
+
     }
 
     

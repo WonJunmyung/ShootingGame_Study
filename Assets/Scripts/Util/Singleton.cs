@@ -11,10 +11,13 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType(typeof(T)) as T;
+                
                 if (_instance == null)
                 {
                     Debug.LogError("현재 씬에서 " + typeof(T) + "를 활성화 할 수 없습니다.");
                 }
+
+                
             }
             return _instance;
         }
@@ -23,6 +26,11 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     // 파괴되지 않는 오브젝트로 만들려면 주석을 품
     public void Awake()
     {
+        T[] obj = FindObjectsOfType(typeof(T)) as T[];
+        if (obj.Length > 1)
+        {
+            Destroy(obj[0].gameObject);
+        }
         DontDestroyOnLoad(gameObject);
     }
 }

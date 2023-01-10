@@ -25,8 +25,8 @@ public class Bullet : MonoBehaviour
         if (lifeTime >= endTime)
         {
             lifeTime = 0f;
-            Destroy(this.gameObject);
-            //ObjectPool.Instance.PushToPool(poolItemName, gameObject);
+            //Destroy(this.gameObject);
+            ObjectPool.Instance.PushToPool("Bullet", gameObject);
         }
     }
 
@@ -38,7 +38,10 @@ public class Bullet : MonoBehaviour
 
             Enemy enemy = other.GetComponent<Enemy>();
             enemy.SetHp(damage);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            lifeTime = 0f;
+            ObjectPool.Instance.PushToPool("Bullet", gameObject);
+            
 
         }
     }

@@ -7,7 +7,7 @@ public class Manager : Singleton<Manager>
 {
     public bool isPause = false;
     public bool isLive = true;
-    public Menu Menu;
+    public Menu menu;
     public enum GameStatus
     {
         None,
@@ -16,13 +16,14 @@ public class Manager : Singleton<Manager>
         GameOver,
         Continue,
     }
-    
+
     //public List<>
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        //Menu = GameObject.Find("Canvas").transform.Find("Menu").GetComponent<Menu>();
+        //Menu = GameObject.Find("Canvas").transform.Find("Menu").GetComponent<Menu>(); 
     }
 
     // Update is called once per frame
@@ -46,14 +47,14 @@ public class Manager : Singleton<Manager>
         Time.timeScale = 0;
         isPause = true;
 
-        Menu.SetMenu(Menu.MenuStatus.Pause);
+        menu.SetMenu(Menu.MenuStatus.Pause);
     }
 
     public void ContinueGame()
     {
         Time.timeScale = 1;
         isPause = false;
-        Menu.SetMenu(Menu.MenuStatus.Continue);
+        menu.SetMenu(Menu.MenuStatus.Continue);
     }
 
     public void RestartGame()

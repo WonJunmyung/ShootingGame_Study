@@ -90,7 +90,11 @@ public class Player : MonoBehaviour
             {
                 isBullet = true;
                 animator.SetTrigger("isAttack");
-                Invoke("SpawnBullet", 0.2f);
+
+                GameObject fireBuillet = ObjectPool.Instance.PopFromPool("Bullet");
+                fireBuillet.transform.rotation = this.transform.rotation;
+                fireBuillet.transform.position = BulletPoint.position;
+                fireBuillet.SetActive(true);
 
             }
         }

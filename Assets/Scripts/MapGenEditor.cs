@@ -5,17 +5,18 @@ using UnityEditor;
 
 namespace Silly
 {
-    [CustomEditor(typeof(MapGenerator))]
-    public class MapGenEditor : Editor
+    [CustomEditor(typeof(MapRandom))]
+    public class MapGenEditorRandom : Editor
     {
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
 
-            MapGenerator myGenerator = (MapGenerator)target;
+            MapRandom myGenerator = (MapRandom)target;
             if(GUILayout.Button("맵을 생성합니다"))
             {
                 myGenerator.BuildGenerator();
+
             }
         }
     }

@@ -42,6 +42,7 @@ public class AttackPoint : MonoBehaviour
                         enemy = other.GetComponent<Enemy>();
                         player.isAttackCheck = false;
                         enemy.SetHp(damage);
+                        Debug.Log("적이 데미지를 입음");
                     }
                 }
                 break;
@@ -54,6 +55,7 @@ public class AttackPoint : MonoBehaviour
                         player = other.GetComponent<Player>();
                         enemy.isAttackCheck = false;
                         player.SetHp(damage);
+                        Debug.Log("내가 데미지를 입음");
                     }
                 }
                 break;

@@ -36,12 +36,8 @@ namespace Silly
         {
             mapWidth = MapInfo.width;   //52
             mapHeight = MapInfo.height; //44
-            Debug.Log(MapInfo.width);
-            Debug.Log(MapInfo.height);
 
             Color[] pixels = MapInfo.GetPixels();
-
-            Debug.Log(pixels.Length);
 
             for(int i = 0; i < mapHeight; i++)
             {
@@ -60,22 +56,22 @@ namespace Silly
                     {
                         GameObject wall = GameObject.Instantiate(Wall, Terrain);
                         wall.transform.position = new Vector3(j * tileSize, 0, i * tileSize);
-                        wall.transform.Rotate(new Vector3(0, GetWallRot(pixels, i, j), 0), Space.Self);
+                        //wall.transform.Rotate(new Vector3(0, GetWallRot(pixels, i, j), 0), Space.Self);
                     }
-                    // 커브 벽
-                    if(pixelColor == Color.green)
-                    {
-                        GameObject curveWall = GameObject.Instantiate(CurveWall, Terrain);
-                        curveWall.transform.position = new Vector3(j * tileSize, 0, i * tileSize);
-                        curveWall.transform.Rotate(new Vector3(0, GetCurveWallRot(pixels, i, j), 0), Space.Self);
-                    }
-                    // 모서리 벽
-                    if(pixelColor == Color.blue)
-                    {
-                        GameObject edgeWall = GameObject.Instantiate(EdgeWall, Terrain);
-                        edgeWall.transform.position = new Vector3(j * tileSize, 0, i * tileSize);
-                        edgeWall.transform.Rotate(new Vector3(0, GetEdgeWall(pixels, i, j), 0), Space.Self);
-                    }
+                    //// 커브 벽
+                    //if(pixelColor == Color.green)
+                    //{
+                    //    GameObject curveWall = GameObject.Instantiate(CurveWall, Terrain);
+                    //    curveWall.transform.position = new Vector3(j * tileSize, 0, i * tileSize);
+                    //    curveWall.transform.Rotate(new Vector3(0, GetCurveWallRot(pixels, i, j), 0), Space.Self);
+                    //}
+                    //// 모서리 벽
+                    //if(pixelColor == Color.blue)
+                    //{
+                    //    GameObject edgeWall = GameObject.Instantiate(EdgeWall, Terrain);
+                    //    edgeWall.transform.position = new Vector3(j * tileSize, 0, i * tileSize);
+                    //    edgeWall.transform.Rotate(new Vector3(0, GetEdgeWall(pixels, i, j), 0), Space.Self);
+                    //}
                     // 몬스터 생성 위치
                     if (pixelColor == ColorResponse)
                     {
